@@ -7,4 +7,4 @@
 - Clone the project
 - Run `npm install` to install all the dependencies
 - Run `npm run build` to build the project (it will continously watch for changes and rebuild the project automatically)
-- Simply open the `index.html` file in your browser
+- Simply open the `index.html` file in your browser manually or use a live server to see the changes live
