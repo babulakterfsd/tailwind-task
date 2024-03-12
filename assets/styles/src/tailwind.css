@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* imported fonts will be placed right below */
+
+@layer base {
+    /* to modify base styles of tailwind, if needed
+     h1 {
+        @apply text-2xl
+    } */
+}
+
+@layer components {
+    /* to add custom components 
+  .btn {
+    @apply text-sm font-bold px-2 rounded-md py-1 mt-4;
+  }
+  .btn-yellow {
+    @apply text-white hover:text-slate-700 outline outline-offset-1 outline-1 outline-yellow-400 hover:bg-yellow-400 hover:outline-offset-0 dark:text-black dark:hover:text-slate-600;
+  }
+  .btn-green {
+    @apply text-white outline outline-offset-1 outline-1 outline-green-400 hover:bg-green-400 hover:outline-offset-0 dark:text-black dark:hover:text-slate-600;
+  } */
+}
+
+@layer utilities {
+    /* we can add custom utility class in this layer 
+    .space-100 {
+      margin: 400px;
+    } */
+}
+
+/* to add variants like hover, focus or such things on our custom classes, we must keep them in the specific variant, either it won't work */
+
+@variants focus, hover {
+  /* .rotate-40 {
+     transform: skew(0deg);
+     transition: all .2s;
+   } */
+}
+
+/* reset deafult styling behavour of browser */ 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+/* ----------- for highly customized responsiveness ------------ */
+.main-container {
+  @apply w-full mx-auto;
+}
+@media (min-width: 576px) {
+  .main-container {
+    max-width: 540px !important;
+  }
+}
+@media (min-width: 768px) {
+  .main-container {
+    max-width: 720px !important;
+  }
+}
+@media (min-width: 992px) {
+  .main-container {
+    max-width: 970px !important;
+  }
+}
+@media (min-width: 1200px) {
+  .main-container {
+    max-width: 1170px !important;
+  }
+}
+@media (min-width: 1400px) {
+  .main-container {
+    max-width: 1320px !important;
+  }
+}
+
+
+/* ------------ custom css if needed -------------- */

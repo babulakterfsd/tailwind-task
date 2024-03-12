@@ -1,0 +1,14 @@
+{
+  "name": "tailwind-task",
+  "version": "1.0.0",
+  "description": "A task given by Shamim vai to test my tailwind knowledge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tailwindcss -i ./assets/styles/src/tailwind.css -o ./assets/styles/output/main.css -w"
+  },
+  "author": "Babul Akter",
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}

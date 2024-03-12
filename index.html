@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" id="theme">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/output/main.css" />
+    <title>Tailwind-task: Given by Shamim vai</title>
+  </head>
+  <body class="dark:bg-black">
+    <!-- Theme color change -->
+    <div
+      class="absolute top-4 right-8 flex space-x-3 bg-[#5459b7] px-2 rounded-full py-1"
+    >
+      <button id="light">🌞</button>
+      <button id="dark">🌛</button>
+    </div>
+
+    <!-- Main content -->
+
+    <!-- scripts -->
+    <script>
+      const theme = document.getElementById('theme');
+      const light = document.getElementById('light');
+      const bulb = document.getElementById('bulb');
+      const dark = document.getElementById('dark');
+
+      light.addEventListener('click', () => {
+        theme.classList.remove('dark');
+        theme.classList.add('light');
+      });
+
+      dark.addEventListener('click', () => {
+        theme.classList.remove('light');
+        theme.classList.add('dark');
+      });
+    </script>
+  </body>
+</html>
