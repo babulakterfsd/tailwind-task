@@ -99,4 +99,6 @@ body, html {
 .text-gray-primary {
   color: #797b81;
 }
-
+.vertical-divider {
+  border-left: 2px solid hsl(223, 19%, 93%);
+}
