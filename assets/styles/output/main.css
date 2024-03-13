@@ -881,13 +881,6 @@ body, html {
 
 /* to add variants like hover, focus or such things on our custom classes, we must keep them in the specific variant, either it won't work */
 
-@variants focus, hover {
-  /* .rotate-40 {
-     transform: skew(0deg);
-     transition: all .2s;
-   } */
-}
-
 /* reset deafult styling behavour of browser */
 
 * {
@@ -954,6 +947,12 @@ body, html {
 
 .vertical-divider {
   border-left: 2px solid hsl(223, 19%, 93%);
+}
+
+@media (max-width: 576px) {
+  .vertical-divider {
+    border-left: 0px solid hsl(223, 19%, 93%);
+  }
 }
 
 .focus\:outline-none:focus {

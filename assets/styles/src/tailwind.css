@@ -104,3 +104,8 @@ body, html {
 .vertical-divider {
   border-left: 2px solid hsl(223, 19%, 93%);
 }
+@media (max-width: 576px) {
+  .vertical-divider {
+    border-left: 0px solid hsl(223, 19%, 93%);
+  }
+}
