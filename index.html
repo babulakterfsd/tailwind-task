@@ -27,7 +27,7 @@
       <div class="w-full lg:w-3/6 mx-auto mt-20 px-2 lg:px-0">
         <!-- card 1 -->
         <div
-          class="card-one bg-white shadow rounded-lg p-5 pb-8 grid grid-cols-12"
+          class="card-one bg-white shadow rounded-lg p-5 pb-5 grid grid-cols-12"
         >
           <div class="col-span-1">
             <div
@@ -67,7 +67,7 @@
         </div>
         <!-- card 2 -->
         <div
-          class="card-two bg-white shadow rounded-lg p-5 pb-8 grid grid-cols-12 mt-4"
+          class="card-two bg-white shadow rounded-lg p-5 pb-5 grid grid-cols-12 mt-4"
         >
           <div class="col-span-1">
             <div
@@ -111,7 +111,7 @@
       <div class="w-full lg:w-3/6 mx-auto mt-4 px-2 lg:px-0">
         <!-- reply card 1 -->
         <div
-          class="card-one bg-white shadow rounded-lg p-5 pb-8 grid grid-cols-12 w-5/6 ml-auto"
+          class="card-one bg-white shadow rounded-lg p-5 pb-5 grid grid-cols-12 w-5/6 ml-auto"
         >
           <div class="col-span-1">
             <div
@@ -154,7 +154,7 @@
         </div>
         <!-- reply card 2 -->
         <div
-          class="card-two bg-white shadow rounded-lg p-5 pb-8 grid grid-cols-12 mt-4 w-5/6 ml-auto"
+          class="card-two bg-white shadow rounded-lg p-5 pb-5 grid grid-cols-12 mt-4 w-5/6 ml-auto"
         >
           <div class="col-span-1">
             <div
@@ -185,7 +185,16 @@
               </div>
               <div class="flex items-center space-x-6">
                 <div class="flex items-center space-x-1">
-                  <i class="fa fa-solid fa-trash text-red-500 text-sm"></i>
+                  <svg
+                    width="12"
+                    height="13"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1.167 12.448c0 .854.7 1.552 1.555 1.552h6.222c.856 0 1.556-.698 1.556-1.552V3.5H1.167v8.948Zm10.5-11.281H8.75L7.773 0h-3.88l-.976 1.167H0v1.166h11.667V1.167Z"
+                      fill="#ED6368"
+                    />
+                  </svg>
                   <p class="font-medium text-sm text-red-500">Delete</p>
                 </div>
                 <div class="flex items-center space-x-1">
@@ -205,6 +214,33 @@
               But the fundamentals are what stay constant.
             </p>
           </div>
+        </div>
+      </div>
+      <!-- comment box-->
+      <div class="w-full lg:w-3/6 mx-auto mt-4 px-2 lg:px-0">
+        <div
+          class="comment-box bg-white shadow rounded-lg p-5 pb-5 flex justify-between items-start"
+        >
+          <img
+            src="./assets/images/juli.PNG"
+            alt="juli"
+            class="w-9 h-9 rounded-full object-cover"
+          />
+          <textarea
+            name="comment"
+            class="block w-full mx-4 py-1 px-2 text-sm border border-gray-200 rounded-lg bg-white focus:outline-none resize-none text-gray-primary"
+            draggable="false"
+            rows="4"
+            placeholder="Add a comment..."
+          >
+          </textarea>
+
+          <button
+            type="button"
+            class="text-white bg-blue-primary text-xs font-semibold py-2 px-4 rounded-md"
+          >
+            SEND
+          </button>
         </div>
       </div>
     </div>
