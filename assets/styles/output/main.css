@@ -741,13 +741,9 @@ video {
   border-width: 2px;
 }
 
-.border-gray-100 {
+.border-gray-200 {
   --tw-border-opacity: 1;
-  border-color: rgb(243 244 246 / var(--tw-border-opacity));
-}
-
-.border-opacity-90 {
-  --tw-border-opacity: 0.9;
+  border-color: rgb(229 231 235 / var(--tw-border-opacity));
 }
 
 .bg-\[\#f5f6fa\] {
@@ -882,6 +878,13 @@ body, html {
 }
 
 /* to add variants like hover, focus or such things on our custom classes, we must keep them in the specific variant, either it won't work */
+
+@variants focus, hover {
+  /* .rotate-40 {
+     transform: skew(0deg);
+     transition: all .2s;
+   } */
+}
 
 /* reset deafult styling behavour of browser */
 
