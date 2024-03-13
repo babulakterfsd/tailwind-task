@@ -746,6 +746,11 @@ video {
   border-color: rgb(229 231 235 / var(--tw-border-opacity));
 }
 
+.border-gray-100 {
+  --tw-border-opacity: 1;
+  border-color: rgb(243 244 246 / var(--tw-border-opacity));
+}
+
 .bg-\[\#f5f6fa\] {
   --tw-bg-opacity: 1;
   background-color: rgb(245 246 250 / var(--tw-bg-opacity));
