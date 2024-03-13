@@ -642,6 +642,18 @@ video {
   height: 100vh;
 }
 
+.h-0 {
+  height: 0px;
+}
+
+.h-2 {
+  height: 0.5rem;
+}
+
+.h-20 {
+  height: 5rem;
+}
+
 .w-3\/5 {
   width: 60%;
 }
@@ -811,6 +823,10 @@ video {
 
 .pb-5 {
   padding-bottom: 1.25rem;
+}
+
+.ps-10 {
+  padding-inline-start: 2.5rem;
 }
 
 .text-sm {
